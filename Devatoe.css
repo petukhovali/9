@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.back {
+background-image: url("https://raw.githubusercontent.com/petukhovali/9/main/sireni.jpg");
+background-size: 100vw;
+background-position: center  6vw;
+background-repeat: no-repeat;
+}
+
+p {
+  position: absolute;
+  bottom: 0;  
+  margin-bottom: 0.4vw;
+color: #531a50;
+}
+
+#row2b {
+  text-align:right;
+}
+
+#row2b > p{
+  font-family: 'Montserrat', serif;
+  position: relative;
+  font-size: 42px;
+}
+
+#row2b > p:nth-child(1){
+  margin-top: 5vw;
+}
+
+#row2b > p:nth-child(2){
+  margin-top: -1vw;
+  font-size: 7.5vw;
+}
+
+#grid {
+  display: grid;
+  grid-gap: 1vw; 
+  grid-template-rows: 5vw;
+  grid-auto-rows: 9vw;
+  grid-template-columns: 1fr repeat(6, 3fr) 1fr;
+}
+
+#grid > div {
+  position: relative;
+  background-color: #edbeec;
+  outline-style: solid;
+  outline-color: #edbeec;
+  outline-width: 1vw;
+}
+
+#grid > div:hover {
+background-color: transparent;
+}
+
+div#row1a,div#row2a,div#row3a,div#row3b,div#row4a,div#row5a,div#row5b,div#row6a{
+  background-color:rgba(64,67,78,0.4);
+}
+
+div#row1a,div#row2a,div#row3a,div#row3b,div#row4a,div#row5a,div#row5b,div#row6a{
+  background-color:rgba(64,67,78,0.4);
+}
+
+#row1a, div#row5a{
+  grid-column-end: span 3;
+}
+#row1b, div#row2b, div#row3b, div#row5c {
+  grid-column-end: span 2;
+}
+
+div#row2b{
+  grid-row-end: span 2;
+}
